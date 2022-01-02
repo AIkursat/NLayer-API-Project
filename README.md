@@ -1,3 +1,4 @@
 # NLayer-API-Project
 
-Asp.net Core Web API and MVC project.
+Best Practices with Asp.net Core Web API and ASP.NET MVC by using Entity Framework Core.
+
