@@ -10,7 +10,7 @@ namespace NLayerProject.Core.Repositories
     {
         Task<TEntity> GetbyIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsync();
-        Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
+        IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate); // Because where is not generic.
 
         // category.SingleOrDefault(x => x.name = "Sample Product."
         Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);

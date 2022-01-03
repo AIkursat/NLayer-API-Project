@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NLayerProject.Data"
   ],
-  "SelectedNode": "\\NLayerProject.sln",
+  "SelectedNode": "\\NLayerProject.Data\\AppDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
