@@ -1,0 +1,15 @@
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Service.deps.json
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Service.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Service.pdb
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Core.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Data.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Core.pdb
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\bin\Debug\netcoreapp3.1\NLayerProject.Data.pdb
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.csproj.AssemblyReference.cache
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.AssemblyInfoInputs.cache
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.AssemblyInfo.cs
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.csproj.CopyComplete
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Service\obj\Debug\netcoreapp3.1\NLayerProject.Service.pdb

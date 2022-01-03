@@ -19,8 +19,7 @@ namespace NLayerProject.Data.Seeds
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.HasData(new Category { Id = _ids[0], Name = "Pencils" },
-            builder.HasData(new Category { Id = _ids[0], Name = "Pencils" }
-         ));
+            new Category { Id = _ids[1], Name = "Notebooks" });
             
         }
     }

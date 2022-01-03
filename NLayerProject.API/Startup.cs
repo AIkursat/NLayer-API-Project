@@ -31,7 +31,10 @@ namespace NLayerProject.API
         {
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"].ToString());
+                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"].ToString(), o =>
+                {
+                    o.MigrationsAssembly("NLayerProject.Data");
+                });
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>(); // It will use same object example ( First created one)
             services.AddControllers();
