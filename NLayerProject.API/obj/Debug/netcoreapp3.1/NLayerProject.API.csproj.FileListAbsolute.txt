@@ -55,3 +55,5 @@ C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\obj\Debug\netco
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\obj\Debug\netcoreapp3.1\NLayerProject.API.dll
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\obj\Debug\netcoreapp3.1\NLayerProject.API.pdb
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\obj\Debug\netcoreapp3.1\NLayerProject.API.genruntimeconfig.cache
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

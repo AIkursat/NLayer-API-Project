@@ -14,6 +14,11 @@ using NLayerProject.Data;
 using Microsoft.EntityFrameworkCore;
 using NLayerProject.Core.UnitOfWorks;
 using NLayerProject.Data.UnitOfWorks;
+using NLayerProject.Core.Repositories;
+using NLayerProject.Data.Repositories;
+using NLayerProject.Core.Service;
+using NLayerProject.Service.Services;
+using AutoMapper;
 
 namespace NLayerProject.API
 {
@@ -29,6 +34,13 @@ namespace NLayerProject.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); // It will use same object example (First created one) and create one by going to ctor of the class.
+
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"].ToString(), o =>
@@ -36,7 +48,7 @@ namespace NLayerProject.API
                     o.MigrationsAssembly("NLayerProject.Data");
                 });
             });
-            services.AddScoped<IUnitOfWork, UnitOfWork>(); // It will use same object example ( First created one)
+            
             services.AddControllers();
         }
 

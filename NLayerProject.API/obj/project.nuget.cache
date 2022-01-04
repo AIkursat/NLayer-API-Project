@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fLrAp+7got+VryzmpMwGOHzTCEohvm56EB6K556hIXaq6DZKoMfzqPJmsXIXIk3CIN0O2apGMbZXdlzgPTWA7Q==",
+  "dgSpecHash": "DppyCuLriVOLMr7X2XrdDiX6wXIpuWxNS7dPy4+3Mr3E/DzmqRXHQGzt0BOzmim6fUna9SpdwlYraxwl2KYa6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\aynur\\Source\\Repos\\NLayer-API-Project\\NLayerProject.API\\NLayerProject.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aynur\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\aynur\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\aynur\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\aynur\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\aynur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

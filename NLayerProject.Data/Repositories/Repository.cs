@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.Data.Repositories
 {
-    class Repository<TEntity> : IRepository<TEntity> where TEntity : class // It's mean that have to be class.
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class // It's mean that have to be class.
     {
         // Create the DbCOntext object
         public readonly DbContext _context;
