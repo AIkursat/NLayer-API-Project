@@ -15,7 +15,7 @@ namespace NLayerProject.Data.Repositories
         public readonly DbContext _context;
         public DbSet<TEntity> _dbSet;
 
-        public Repository(DbContext context)
+        public Repository(AppDbContext context)
         {
             _context = context; // In order to Reach the Database
             _dbSet = context.Set<TEntity>(); // In order to reach Db Tables. If product comes to TEntity, we work on product for example.
@@ -31,9 +31,9 @@ namespace NLayerProject.Data.Repositories
             await _dbSet.AddRangeAsync(entities);
         }
 
-        public IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
+        public async Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbSet.Where(predicate);
+            return await _dbSet.Where(predicate).ToListAsync();
         }
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()

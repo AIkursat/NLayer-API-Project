@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\NLayerProject.Data",
-    "\\NLayerProject.Data\\Repositories"
+    "\\NLayerProject.Data\\Repositories",
+    "\\NLayerProject.Data\\UnitOfWorks"
   ],
-  "SelectedNode": "\\NLayerProject.Data\\Repositories\\Repository.cs",
+  "SelectedNode": "\\NLayerProject.Data\\UnitOfWorks\\UnitOfWork.cs",
   "PreviewInSolutionExplorer": false
 }

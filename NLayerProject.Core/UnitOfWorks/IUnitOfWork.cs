@@ -12,8 +12,8 @@ namespace NLayerProject.Core.UnitOfWorks
 
         ICategoryRepository Categories { get; }
 
-        Task CommitAsync();
+        Task CommitAsync(); // save async
 
-        void Commit();
+        void Commit(); // Save
     }
 }
