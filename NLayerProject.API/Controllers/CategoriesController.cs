@@ -11,14 +11,14 @@ namespace NLayerProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoriesController : ControllerBase
     {
         // DI
 
         private readonly ICategoryService _categoryService;
         private readonly IMapper _mapper;
 
-        public CategoryController(ICategoryService categoryService, IMapper mapper)
+        public CategoriesController(ICategoryService categoryService, IMapper mapper)
         {
             _categoryService = categoryService;
             _mapper = mapper;
@@ -29,7 +29,7 @@ namespace NLayerProject.API.Controllers
         {
             var categories = await _categoryService.GetAllAsync();
 
-            return Ok(_mapper.Map<IEnumerable<CategoryDto>>(categories)); // Because it return Category, that's why we return the CategoryDto.
+            return Ok(_mapper.Map<IEnumerable<CategoryDto>>(categories)); // Because it returns Category, that's why we return the CategoryDto.
         }
 
         [HttpGet("{id}")]
