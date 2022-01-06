@@ -20,6 +20,11 @@ using NLayerProject.Core.Service;
 using NLayerProject.Service.Services;
 using AutoMapper;
 using NLayerProject.API.Filters;
+using Microsoft.AspNetCore.Diagnostics;
+using NLayerProject.API.DTOs;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using NLayerProject.API.Extensions;
 
 namespace NLayerProject.API
 {
@@ -69,6 +74,8 @@ namespace NLayerProject.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCustomException();
+          
 
             app.UseHttpsRedirection();
 
