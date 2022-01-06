@@ -19,6 +19,7 @@ using NLayerProject.Data.Repositories;
 using NLayerProject.Core.Service;
 using NLayerProject.Service.Services;
 using AutoMapper;
+using NLayerProject.API.Filters;
 
 namespace NLayerProject.API
 {
@@ -36,6 +37,7 @@ namespace NLayerProject.API
         {
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<NotFoundFilter>();
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
@@ -49,7 +51,9 @@ namespace NLayerProject.API
                 });
             });
             
-            services.AddControllers();
+            services.AddControllers(o => { // Made possible for ValidationFilter for all method.
+                o.Filters.Add(new ValidationFilter());
+            });
 
             services.Configure<ApiBehaviorOptions>(options =>
             {

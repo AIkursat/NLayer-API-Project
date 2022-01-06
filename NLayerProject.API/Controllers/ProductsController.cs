@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.API.Controllers
 {
+    // Add the validationFilter for all, configure the start up for that.
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -32,7 +33,7 @@ namespace NLayerProject.API.Controllers
 
             return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
         }
-
+        [ServiceFilter(typeof(NotFoundFilter))]
         [HttpGet("{id}")]
 
         public async Task<IActionResult> GetById(int id)
