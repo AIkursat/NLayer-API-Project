@@ -4,6 +4,6 @@
     "\\NLayerProject.API",
     "\\NLayerProject.API\\Controllers"
   ],
-  "SelectedNode": "\\NLayerProject.sln",
+  "SelectedNode": "\\NLayerProject.API\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

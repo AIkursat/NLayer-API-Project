@@ -7,4 +7,3 @@ C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Core\obj\Debug\netc
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Core\obj\Debug\netcoreapp3.1\NLayerProject.Core.csproj.CoreCompileInputs.cache
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Core\obj\Debug\netcoreapp3.1\NLayerProject.Core.dll
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Core\obj\Debug\netcoreapp3.1\NLayerProject.Core.pdb
-C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.Core\obj\Debug\netcoreapp3.1\NLayerProject.Core.csproj.AssemblyReference.cache
