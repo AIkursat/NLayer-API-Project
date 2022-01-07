@@ -25,7 +25,17 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "ac284d38-7169-4f03-8ee9-bba252328042": {
+      "ProjectGuid": "ac284d38-7169-4f03-8ee9-bba252328042",
+      "DisplayName": "NLayerProject.Web",
+      "ColorIndex": 4
+    },
+    "8585eaf4-fbb5-45a7-8a97-ac4565eb494d": {
+      "ProjectGuid": "8585eaf4-fbb5-45a7-8a97-ac4565eb494d",
+      "DisplayName": "NLayerProject.Web",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

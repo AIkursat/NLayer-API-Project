@@ -9,5 +9,6 @@ namespace NLayerProject.Core.Service
     public interface ICategoryService : IService<Category>
     {
         Task<Category> GetWithProductByIdAsync(int categoryId);
+        Task GetByIdAsync(int id);
     }
 }

@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\NLayerProject.API",
-    "\\NLayerProject.API\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\NLayerProject.API\\Startup.cs",
+  "SelectedNode": "\\NLayerProject.sln",
   "PreviewInSolutionExplorer": false
 }
