@@ -44,7 +44,7 @@ namespace NLayerProject.API.Controllers
         {
             var category = await _categoryService.GetWithProductByIdAsync(id);
 
-            return Ok(_mapper.Map<CategoryDto>(category));
+            return Ok(_mapper.Map<CategoryWithProductDTO>(category));
 
         }
             [HttpPost]
