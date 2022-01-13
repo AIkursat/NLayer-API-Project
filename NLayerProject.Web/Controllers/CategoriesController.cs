@@ -8,6 +8,8 @@ using System;
 using NLayerProject.Core.Entities;
 using NLayerProject.API.Filters;
 
+
+
 namespace NLayerProject.Web.Controllers
 {
     public class CategoriesController : Controller
@@ -60,7 +62,7 @@ namespace NLayerProject.Web.Controllers
         [ServiceFilter(typeof(NotFoundFilter))]
         public IActionResult Delete(int id)
         {
-            var category = _categoryService.GetByIdAsync(id).Result;
+            var category = _categoryService.GetByIdAsync(id);
 
             _categoryService.Remove(category);
 

@@ -15,6 +15,11 @@ namespace NLayerProject.Service.Services
         {
         }
 
+        public Task GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<Category> GetWithProductByIdAsync(int categoryId)
         {
            return await _unitOfWork.Categories.GetWithProductByIdAsync(categoryId); // _unitOfWork service'den geliyor.

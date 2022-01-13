@@ -23,9 +23,11 @@ namespace NLayerProject.Data
             modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1, 2 }));
 
             modelBuilder.ApplyConfiguration(new PersonConfiguration());
-            
+
+            // builder.ApplyConfigurationsFromAssembly(GetType().Assembly); // That's best practice and it will get all classes which used IEntityTypeConfiguration.
+
         }
-        
+
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Person> Persons { get; set; }
