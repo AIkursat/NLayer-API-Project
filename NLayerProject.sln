@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.Data", "NLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerProject.Service", "NLayerProject.Service\NLayerProject.Service.csproj", "{605E5292-4ABE-453A-8611-275CD5E414D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerProject.Test", "NLayerProject.Test\NLayerProject.Test.csproj", "{3534A704-9F42-40A8-98C8-EC5342A7C3FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{605E5292-4ABE-453A-8611-275CD5E414D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{605E5292-4ABE-453A-8611-275CD5E414D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{605E5292-4ABE-453A-8611-275CD5E414D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3534A704-9F42-40A8-98C8-EC5342A7C3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3534A704-9F42-40A8-98C8-EC5342A7C3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3534A704-9F42-40A8-98C8-EC5342A7C3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3534A704-9F42-40A8-98C8-EC5342A7C3FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

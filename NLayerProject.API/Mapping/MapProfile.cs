@@ -10,7 +10,7 @@ namespace NLayerProject.API.Mapping
         {
             CreateMap<Category, CategoryDto>();
             CreateMap<CategoryDto, Category>();
-
+            // Use one side mapping.
             CreateMap<Category, CategoryWithProductDTO>();
             CreateMap<CategoryWithProductDTO, Category>();
 

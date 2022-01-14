@@ -35,7 +35,22 @@
       "ProjectGuid": "8585eaf4-fbb5-45a7-8a97-ac4565eb494d",
       "DisplayName": "NLayerProject.Web",
       "ColorIndex": 5
+    },
+    "f1a069d4-6b67-46cc-ac96-5f39b1a01a05": {
+      "ProjectGuid": "f1a069d4-6b67-46cc-ac96-5f39b1a01a05",
+      "DisplayName": "NLayerProject.Test",
+      "ColorIndex": 6
+    },
+    "18b1906b-aa90-4e3e-b41e-1a31579284db": {
+      "ProjectGuid": "18b1906b-aa90-4e3e-b41e-1a31579284db",
+      "DisplayName": "NLayerProject.Test",
+      "ColorIndex": 7
+    },
+    "3534a704-9f42-40a8-98c8-ec5342a7c3fb": {
+      "ProjectGuid": "3534a704-9f42-40a8-98c8-ec5342a7c3fb",
+      "DisplayName": "NLayerProject.Test",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 9
 }

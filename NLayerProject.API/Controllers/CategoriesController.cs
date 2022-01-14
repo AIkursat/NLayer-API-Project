@@ -44,7 +44,7 @@ namespace NLayerProject.API.Controllers
         {
             var category = await _categoryService.GetWithProductByIdAsync(id);
 
-            return Ok(_mapper.Map<CategoryWithProductDTO>(category));
+            return Ok(_mapper.Map<CategoryWithProductDTO>(category)); // Write to Service.
 
         }
             [HttpPost]
@@ -65,7 +65,7 @@ namespace NLayerProject.API.Controllers
 
 
         }
-
+        
         [HttpDelete("{id}")]
         public IActionResult Remove(int id)
         {

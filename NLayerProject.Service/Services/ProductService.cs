@@ -16,9 +16,9 @@ namespace NLayerProject.Service.Services
         {
         }
 
-        public async Task<Product> GetWithCatergoryByIdAsync(int productId)
+        public async Task<Product> GetWithCatergoryByIdAsync(int productId) // Generic IResult.
         {
-            return await _unitOfWork.Products.GetWithCatergoryByIdAsync(productId);
+            return await _unitOfWork.Products.GetWithCatergoryByIdAsync(productId); // Promise
         }
     }
 }
