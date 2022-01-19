@@ -8,6 +8,8 @@ using NLayerProject.Core.Service;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace NLayerProject.API.Controllers
 {

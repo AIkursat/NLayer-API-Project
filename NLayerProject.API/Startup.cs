@@ -65,6 +65,16 @@ namespace NLayerProject.API
                 options.SuppressModelStateInvalidFilter = true;
             });
 
+            services.AddCors( options =>
+           {
+               options.AddDefaultPolicy(builder =>
+               builder.WithOrigins("http://localhost:50500")
+               .AllowAnyHeader()
+               .AllowAnyOrigin());
+           }
+            );
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,6 +86,7 @@ namespace NLayerProject.API
             }
             app.UseCustomException();
           
+            app.UseCors();
 
             app.UseHttpsRedirection();
 
