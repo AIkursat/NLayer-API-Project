@@ -8,5 +8,6 @@ N-Tier Architecture Asp.net Core Web API with Best Practices by using Entity Fra
   <li> Unit of Work</li>
   <li> AutoMapper</li>
   <li>IOC</li>
+  <li>CORS</li>
   </ul>
 
