@@ -58,8 +58,9 @@ namespace NLayerProject.API.Controllers
 
         public async Task<IActionResult> Save(ProductDto productDto)
         {
-            var newProduct = _productService.AddAsync(_mapper.Map<Product>(productDto));
-            return Created(string.Empty, _mapper.Map<ProductDto>(newProduct));
+            var newProduct = await _productService.AddAsync(_mapper.Map<Product>(productDto));
+            //  return Created(string.Empty, _mapper.Map<ProductDto>(newProduct));
+            return Ok(newProduct);
 
         }
         [HttpPut]

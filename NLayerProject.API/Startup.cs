@@ -25,6 +25,7 @@ using NLayerProject.API.DTOs;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using NLayerProject.API.Extensions;
+using Newtonsoft.Json.Serialization;
 
 namespace NLayerProject.API
 {
@@ -55,7 +56,7 @@ namespace NLayerProject.API
                     o.MigrationsAssembly("NLayerProject.Data");
                 });
             });
-            
+
             services.AddControllers(o => { // Made possible for ValidationFilter for all method.
                 o.Filters.Add(new ValidationFilter());
             });
@@ -65,15 +66,23 @@ namespace NLayerProject.API
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            services.AddCors( options =>
-           {
-               options.AddDefaultPolicy(builder =>
-               builder.WithOrigins("http://localhost:50500")
-               .AllowAnyHeader()
-               .AllowAnyOrigin());
-           }
+            services.AddCors(options =>
+          {
+              options.AddDefaultPolicy(builder =>
+              builder.WithOrigins("http://localhost:8080")
+              .AllowAnyHeader()
+              .AllowAnyOrigin()
+              .AllowAnyMethod()
+              );
+          }
             );
-            
+
+            //JSON Serializer
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
+                = new DefaultContractResolver());
+
 
         }
 

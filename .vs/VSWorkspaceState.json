@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NLayerProject.API",
+    "\\NLayerProject.API\\Controllers",
+    "\\NLayerProject.Core",
+    "\\NLayerProject.Core\\Entities",
+    "\\NLayerProject.Data",
+    "\\NLayerProject.Data\\Seeds",
+    "\\NLayerProject.Service",
+    "\\NLayerProject.Service\\Services"
   ],
-  "SelectedNode": "\\NLayerProject.sln",
+  "SelectedNode": "\\NLayerProject.API\\Controllers\\ProductsController.cs",
   "PreviewInSolutionExplorer": false
 }

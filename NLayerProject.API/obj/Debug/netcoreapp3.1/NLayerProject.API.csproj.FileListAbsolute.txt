@@ -61,3 +61,6 @@ C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netco
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\aynur\Source\Repos\NLayer-API-Project\NLayerProject.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

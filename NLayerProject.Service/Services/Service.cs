@@ -1,4 +1,5 @@
-﻿using NLayerProject.Core.Repositories;
+﻿using Microsoft.AspNetCore.Cors;
+using NLayerProject.Core.Repositories;
 using NLayerProject.Core.Service;
 using NLayerProject.Core.UnitOfWorks;
 using System;
@@ -23,11 +24,20 @@ namespace NLayerProject.Service.Services
         }
         public async Task<TEntity> AddAsync(TEntity entity)
         {
-            await _repository.AddAsync(entity);
+            try
+            {
+                await _repository.AddAsync(entity);
 
-            await _unitOfWork.CommitAsync();
+                await _unitOfWork.CommitAsync();
+                return entity;
 
-            return entity;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
 
         }
 
@@ -51,6 +61,7 @@ namespace NLayerProject.Service.Services
             return await _repository.GetbyIdAsync(id);
 
         }
+      
         public void Remove(TEntity entity)
         {
             _repository.Remove(entity);

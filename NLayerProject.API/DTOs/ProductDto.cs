@@ -16,5 +16,7 @@ namespace NLayerProject.API.DTOs
         public decimal Price { get; set; }
         public int CategoryId { get; set; }
 
+        public bool IsDeleted { get; set; }
+
     }
 }

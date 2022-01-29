@@ -12,7 +12,9 @@ namespace NLayerProject.Core.Entities
         public decimal Price { get; set; }
         public int CategoryId { get; set; } // Because it's depend on category.
         public bool IsDeleted { get; set; }
-        public string InnerBarcode { get; set; }
+        public string InnerBarcode { get; set; } 
+        
+        // Add Active-Pasive.
         public virtual Category Category { get; set; } // Reference for Category class.
     }
 }
