@@ -61,11 +61,12 @@ namespace NLayerProject.API.Controllers
             var newProduct = await _productService.AddAsync(_mapper.Map<Product>(productDto));
             //  return Created(string.Empty, _mapper.Map<ProductDto>(newProduct));
             return Ok(newProduct);
+            
 
         }
         [HttpPut]
 
-        public IActionResult Update(ProductDto productDto)
+        public IActionResult Update([FromBody] ProductDto productDto)
         {
             var product = _productService.Update(_mapper.Map<Product>(productDto));
 

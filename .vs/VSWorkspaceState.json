@@ -6,6 +6,7 @@
     "\\NLayerProject.Core",
     "\\NLayerProject.Core\\Entities",
     "\\NLayerProject.Data",
+    "\\NLayerProject.Data\\Configurations",
     "\\NLayerProject.Data\\Seeds",
     "\\NLayerProject.Service",
     "\\NLayerProject.Service\\Services"

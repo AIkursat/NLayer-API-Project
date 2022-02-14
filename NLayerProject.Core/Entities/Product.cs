@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace NLayerProject.Core.Entities
@@ -10,11 +11,12 @@ namespace NLayerProject.Core.Entities
         public string Name { get; set; }
         public int Stock { get; set; }
         public decimal Price { get; set; }
-        public int CategoryId { get; set; } // Because it's depend on category.
+       // Because it's depend on category.
         public bool IsDeleted { get; set; }
-        public string InnerBarcode { get; set; } 
-        
+        public string InnerBarcode { get; set; }
+        [ForeignKey("Id")]
+        public int CategoryId { get; set; }
         // Add Active-Pasive.
-        public virtual Category Category { get; set; } // Reference for Category class.
+        public Category Category { get; set; } // Reference for Category class.
     }
 }

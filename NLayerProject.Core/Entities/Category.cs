@@ -10,11 +10,11 @@ namespace NLayerProject.Core.Entities
 
         public Category()
         {
-            Products = new Collection<Product>();
+            Products = new List<Product>();
         }
         public int Id { get; set; }
         public string Name { get; set; }
         public bool IsDeleted { get; set; }
-        public ICollection<Product> Products { get; set; } // Because every category can have one more product
+        public List<Product> Products { get; set; } // Because every category can have one more product
     }
 }
