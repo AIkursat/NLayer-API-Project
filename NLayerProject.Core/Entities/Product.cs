@@ -14,8 +14,10 @@ namespace NLayerProject.Core.Entities
        // Because it's depend on category.
         public bool IsDeleted { get; set; }
         public string InnerBarcode { get; set; }
-        [ForeignKey("Id")]
+       
         public int CategoryId { get; set; }
+
+        //[ForeignKey("CategoryId")]
         // Add Active-Pasive.
         public Category Category { get; set; } // Reference for Category class.
     }

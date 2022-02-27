@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace NLayerProject.Core.Repositories
 {
-     public interface IProductRepository : IRepository<Product> // Make it Generic.
+    public interface IProductRepository : IRepository<Product> // Make it Generic.
     {
+        Task<List<Product>> GetAllCategoriesAsync();
         Task<Product> GetWithCatergoryByIdAsync(int productId);
     }
 }

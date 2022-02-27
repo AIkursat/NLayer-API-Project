@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+//using System.Data.Entity;
 using System.Threading.Tasks;
 
 namespace NLayerProject.Service.Services
@@ -14,6 +15,11 @@ namespace NLayerProject.Service.Services
     {
         public ProductService(IUnitOfWork unitOfWork, IRepository<Product> repository) : base(unitOfWork, repository)
         {
+        }
+
+        public async Task<List<Product>> GetAllCategoriesAsync() // Generic IResult.
+        {
+            return await _unitOfWork.Products.GetAllCategoriesAsync(); // Promise
         }
 
         public async Task<Product> GetWithCatergoryByIdAsync(int productId) // Generic IResult.

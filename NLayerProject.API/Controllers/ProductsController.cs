@@ -31,9 +31,11 @@ namespace NLayerProject.API.Controllers
 
         public async Task<IActionResult> GetAll()
         {
-            var products = await _productService.GetAllAsync();
+            var products = await _productService.GetAllCategoriesAsync();
+            //var p = products.Then<
+            return Ok(products);
+            //return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
 
-            return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
         }
         [ServiceFilter(typeof(NotFoundFilter))]
         [HttpGet("{id}")]

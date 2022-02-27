@@ -9,6 +9,7 @@ namespace NLayerProject.Core.Service
     public interface IProductService : IService<Product>
     {
         Task<Product> GetWithCatergoryByIdAsync(int productId);
+        Task<List<Product>> GetAllCategoriesAsync();
 
         // bool ControlInnerBarcode(Product product);
     }

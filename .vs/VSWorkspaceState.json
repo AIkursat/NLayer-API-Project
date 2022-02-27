@@ -11,6 +11,6 @@
     "\\NLayerProject.Service",
     "\\NLayerProject.Service\\Services"
   ],
-  "SelectedNode": "\\NLayerProject.API\\Controllers\\ProductsController.cs",
+  "SelectedNode": "\\NLayerProject.Service\\Services\\Service.cs",
   "PreviewInSolutionExplorer": false
 }

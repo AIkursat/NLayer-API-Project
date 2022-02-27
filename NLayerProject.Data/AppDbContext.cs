@@ -26,6 +26,10 @@ namespace NLayerProject.Data
 
             // builder.ApplyConfigurationsFromAssembly(GetType().Assembly); // That's best practice and it will get all classes which used IEntityTypeConfiguration.
 
+            //modelBuilder.Entity<Product>().Ignore(x => x.Category);
+            //modelBuilder.Entity<Product>().HasOne(c => c.Category).WithMany(p => p.Products).HasForeignKey("CategoryId");
+           // modelBuilder.Entity<Category>().HasMany(p => p.Products).WithOne(c => c.Category).HasForeignKey("Id");
+
         }
 
         public DbSet<Category> Categories { get; set; }

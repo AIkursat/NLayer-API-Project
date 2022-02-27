@@ -15,6 +15,6 @@ namespace NLayerProject.Core.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public bool IsDeleted { get; set; }
-        public List<Product> Products { get; set; } // Because every category can have one more product
+        public ICollection<Product> Products { get; set; } // Because every category can have one more product
     }
 }
